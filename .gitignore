@@ -8,8 +8,8 @@
 cache/*
 # skip composer repository and build file
 vendor/*
-composer.lock
 # skip public/subdirectorie
+composer.lock
 # skip directories containing gitkeep files
 !**/.gitkeep
 # ignore any local confg file!
