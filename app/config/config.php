@@ -12,7 +12,7 @@ $localConfiguration = [
         'host' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'dbname' => 'ecf_phalcon',
+        'dbname' => 'webappsealler',
         'charset' => 'utf8'
     ]
 ];
