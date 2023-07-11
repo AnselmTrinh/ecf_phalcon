@@ -12,10 +12,11 @@ $localConfiguration = [
         'host' => 'localhost',
         'username' => 'anselm',
         'password' => '',
-        'dbname' => 'webappsealler',
+        'dbname' => 'ecf_phalcon',
         'charset' => 'utf8'
     ]
 ];
+
 return new \Phalcon\Config([
     'version' => '1.0',
 
