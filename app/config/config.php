@@ -10,13 +10,14 @@ $localConfiguration = [
     'database' => [
         'adapter' => 'Mysql',
         'host' => 'localhost',
-        'username' => 'anselm',
+        'username' => '',
         'password' => '',
-        'dbname' => 'ecf_phalcon',
+        'dbname' => '',
         'charset' => 'utf8'
     ]
 ];
-
+$localConfigFileName = APP_PATH.'/config/local.php';
+if(file_exists($localConfigFileName)) include 'local.php';
 return new \Phalcon\Config([
     'version' => '1.0',
 
