@@ -2,7 +2,17 @@
 
 class Client extends \Phalcon\Mvc\Model
 {
+    public function indexAction()
+    {
+        // Récupérer les données des clients depuis la base de données
+        $clients = clients::find();
 
+        // Convertir les données en un tableau simple
+        $clientData = $clients->toArray();
+
+        // Envoyer les données à la vue
+        $this->view->clients = $clientData;
+    }
     /**
      *
      * @var integer
@@ -12,7 +22,7 @@ class Client extends \Phalcon\Mvc\Model
      */
     protected $id;
 
-    /**
+/**
      *
      * @var string
      * @Column(column="raison_sociale", type="string", length=50, nullable=false)
