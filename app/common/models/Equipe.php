@@ -1,5 +1,5 @@
 <?php
-
+namespace Ecf_phalcon\Models;
 class Equipe extends \Phalcon\Mvc\Model
 {
 
@@ -130,7 +130,7 @@ class Equipe extends \Phalcon\Mvc\Model
      */
     public function initialize()
     {
-        $this->setSchema("webappsealler");
+        $this->setSchema("webappsaler");
         $this->setSource("equipe");
         $this->hasMany('id', 'EquipeBase', 'id_equipe', ['alias' => 'EquipeBase']);
         $this->belongsTo('id_chef_de_projet', '\ChefDeProjet', 'id', ['alias' => 'ChefDeProjet']);
