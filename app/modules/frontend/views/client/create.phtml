@@ -1,0 +1,19 @@
+<h1>Ajouter un client</h1>
+
+<form method="post" action="<?= $this->url->get('ecf_phalcon/client') ?>">
+    <div>
+        <label for="raison_sociale">Raison sociale :</label>
+        <input type="text" name="raison_sociale" id="raison_sociale" required>
+    </div>
+    <div>
+        <label for="ridet">Ridet :</label>
+        <input type="text" name="ridet" id="ridet" required>
+    </div>
+    <div>
+        <label for="ssi2">Ssi2 :</label>
+        <input type="text" name="ssi2" id="ssi2" required>
+    </div>
+    <div>
+        <input type="submit" value="Ajouter">
+    </div>
+</form>
